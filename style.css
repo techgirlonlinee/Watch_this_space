@@ -97,10 +97,11 @@ video {
 
 @font-face {
   font-family: ArialNarrow;
-  src: url(/font/Arial-Narrow-Bold.woff) format("woff"),
-    url(/font/Arial-Narrow-Bold.woff2) format("woff2"),
-    url(/font/Arial-Narrow-Bold.eot) format("embedded-opentype"),
-    url(/font/Arial-Narrow-Bold.ttf) format("truetype");
+  src: url(../Watch_this_space//font/Arial-Narrow-Bold.woff) format("woff"),
+    url(../Watch_this_space//font/Arial-Narrow-Bold.woff2) format("woff2"),
+    url(../Watch_this_space//font/Arial-Narrow-Bold.eot)
+      format("embedded-opentype"),
+    url(../Watch_this_space/font/Arial-Narrow-Bold.ttf) format("truetype");
   font-weight: 600;
 }
 
@@ -130,7 +131,6 @@ body {
   font-size: 148px;
   letter-spacing: -0.5rem;
   transform: translate(-50%, -50%);
-  font-family: ArialNarrow;
 }
 
 @media (max-width: 490px) {

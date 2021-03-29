@@ -139,11 +139,13 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root33)) {
     number10.style.top = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan30)) + "px";
     number10.style.left = margin;
+    number10.style.transform = `translateX(-25%)`
     document.body.appendChild(number10);
     } else {
     number10.style.top = margin;
     number10.style.left = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan60)) + "px";
     document.body.appendChild(number10);
+    
     }
 
     const number11 = document.createElement("div")
@@ -158,6 +160,7 @@
     number11.style.top = margin;
     number11.style.left = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan30)) + "px";
     document.body.appendChild(number11);
+
     }
 }
 
