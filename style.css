@@ -97,7 +97,10 @@ video {
 
 body {
   font-size: 32px;
-  font-family: Arial Narrow;
+  font-family: Arial Narrow, Arial, Helvetica, sans-serif;
+  src: url(/font/Arial-Narrow.eot), url(/font/Arial-Narrow.svg),
+    url(/font/Arial-Narrow.ttf), url(/font/Arial-Narrow.woff),
+    url(/font/Arial-Narrow.woff2);
   line-height: 0;
   font-weight: 550;
 }
