@@ -96,16 +96,15 @@ video {
 }
 
 @font-face {
-  font-family: ArialNarrow;
-  src: url(/font/Arial-Narrow-Bold.eot), url(/font/Arial-Narrow-Bold.svg),
-    url(/font/Arial-Narrow-Bold.ttf), url(/font/Arial-Narrow-Bold.woff),
-    url(/font/Arial-Narrow-Bold.woff2);
+  font-family: AN;
+  src: url(/font/Arial-Narrow-Bold.woff), url(/font/Arial-Narrow-Bold.woff2),
+    url(/font/Arial-Narrow-Bold.eot), url(/font/Arial-Narrow-Bold.ttf);
   font-weight: 600;
 }
 
 body {
   font-size: 16px;
-  font-family: ArialNarrow, Arial Narrow, Arial, Helvetica, sans-serif;
+  font-family: AN, Arial Narrow, Arial, Helvetica, sans-serif;
   line-height: 0;
   letter-spacing: -1px;
   font-weight: 600;
@@ -135,7 +134,9 @@ body {
     font-size: 19px;
   }
   .day-indicator {
-    font-size: 112px;
-    letter-spacing: -0.25rem;
+    /* font-size: 112px;
+    letter-spacing: -0.25rem; */
+    font-size: 64px;
+    letter-spacing: -0.1rem;
   }
 }
