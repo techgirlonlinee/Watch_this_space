@@ -100,7 +100,7 @@ video {
   src: url(/font/Arial-Narrow-Bold.eot), url(/font/Arial-Narrow-Bold.svg),
     url(/font/Arial-Narrow-Bold.ttf), url(/font/Arial-Narrow-Bold.woff),
     url(/font/Arial-Narrow-Bold.woff2);
-  /* font-weight: 600; */
+  font-weight: 600;
 }
 
 body {
@@ -108,7 +108,7 @@ body {
   font-family: ArialNarrow, Arial Narrow, Arial, Helvetica, sans-serif;
   line-height: 0;
   letter-spacing: -1px;
-  /* font-weight: 600; */
+  font-weight: 600;
 }
 
 .box {
