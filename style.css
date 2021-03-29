@@ -127,6 +127,8 @@ body {
   /* font-size: 224; */
   font-size: 148px;
   letter-spacing: -0.5rem;
+  transform: translate(-50%, -50%);
+  font-family: AN;
 }
 
 @media (max-width: 490px) {
@@ -136,7 +138,7 @@ body {
   .day-indicator {
     /* font-size: 112px;
     letter-spacing: -0.25rem; */
-    font-size: 86px;
+    font-size: 94px;
     letter-spacing: -0.1rem;
   }
 }

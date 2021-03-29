@@ -170,8 +170,7 @@ const now = new Date();
   const hour = now.getHours() * 30 + Math.floor(now.getMinutes() / 12) * 6;
   document.body.style.backgroundImage = `conic-gradient(from ${hour}deg, #c4c4c4, #fff)`;
 
-  const line = document.querySelector(".day-indicator")
- line.style.transform = `translate(-50%, -50%)`
+ 
 
 function formatAMPM(date) {
   var hours = date.getHours();
@@ -182,8 +181,9 @@ function formatAMPM(date) {
   return strTime;
 }
 
+const line = document.querySelector(".day-indicator")
 line.innerHTML = formatAMPM(new Date)
-
+// line.style.transform = `translate(-50%, -50%)`
 }
 
 function myStopFunction() {
