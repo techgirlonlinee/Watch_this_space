@@ -95,14 +95,20 @@ video {
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: ArialNarrow;
+  src: url(/font/Arial-Narrow-Bold.eot), url(/font/Arial-Narrow-Bold.svg),
+    url(/font/Arial-Narrow-Bold.ttf), url(/font/Arial-Narrow-Bold.woff),
+    url(/font/Arial-Narrow-Bold.woff2);
+  font-weight: 500;
+}
+
 body {
-  font-size: 32px;
-  font-family: Arial Narrow, Arial, Helvetica, sans-serif;
-  src: url(/font/Arial-Narrow.eot), url(/font/Arial-Narrow.svg),
-    url(/font/Arial-Narrow.ttf), url(/font/Arial-Narrow.woff),
-    url(/font/Arial-Narrow.woff2);
+  font-size: 16px;
+  font-family: ArialNarrow, Arial Narrow, Arial, Helvetica, sans-serif;
   line-height: 0;
-  font-weight: 550;
+  letter-spacing: -1px;
+  font-weight: 500;
 }
 
 .box {
@@ -119,5 +125,16 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  font-size: 28px;
+  font-size: 224;
+  letter-spacing: -0.5rem;
+}
+
+@media (max-width: 490px) {
+  body {
+    font-size: 19px;
+  }
+  .day-indicator {
+    font-size: 112px;
+    letter-spacing: -0.25rem;
+  }
 }

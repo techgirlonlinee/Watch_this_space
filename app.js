@@ -11,7 +11,6 @@
 
     const number12 = document.createElement("div")
     number12.innerText = "12";
-    number12.style.color = "#000000";
     number12.style.position = 'absolute';
     number12.style.top = margin;
     number12.style.left = "50" + "%";
@@ -66,11 +65,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root33)) {
     number2.style.top = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan30)) + "px";
     number2.style.right = margin;
-    // number2.style.color = "#0000ff";
     document.body.appendChild(number2);
     } else {
     number2.style.top = margin;
-    // number2.style.color = "#ff0000";
     number2.style.right = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan60)) + "px";
     document.body.appendChild(number2);
     }
@@ -83,11 +80,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root33)) {
     number4.style.bottom = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan30)) + "px";
     number4.style.right = margin;
-    // number4.style.color = "#0000ff";
     document.body.appendChild(number4);
     } else {
     number4.style.bottom = margin;
-    // number4.style.color = "#ff0000";
     number4.style.right = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan60)) + "px";
     document.body.appendChild(number4);
     }
@@ -99,11 +94,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root3)) {
     number5.style.bottom = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan60)) + "px";
     number5.style.right = margin;
-    // number5.style.color = "#0000ff";
     document.body.appendChild(number5);
     } else {
     number5.style.bottom = margin;
-    // number5.style.color = "#ff0000";
     number5.style.right = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan30)) + "px";
     document.body.appendChild(number5);
     }
@@ -116,11 +109,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root3)) {
     number7.style.bottom = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan60)) + "px";
     number7.style.left = margin;
-    // number7.style.color = "#0000ff";
     document.body.appendChild(number7);
     } else {
     number7.style.bottom = margin;
-    // number7.style.color = "#ff0000";
     number7.style.left = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan30)) + "px";
     document.body.appendChild(number7);
     }
@@ -133,11 +124,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root33)) {
     number8.style.bottom = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan30)) + "px";
     number8.style.left = margin;
-    // number8.style.color = "#0000ff";
     document.body.appendChild(number8);
     } else {
     number8.style.bottom = margin;
-    // number8.style.color = "#ff0000";
     number8.style.left = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan60)) + "px";
     document.body.appendChild(number8);
     }
@@ -150,11 +139,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root33)) {
     number10.style.top = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan30)) + "px";
     number10.style.left = margin;
-    // number10.style.color = "#0000ff";
     document.body.appendChild(number10);
     } else {
     number10.style.top = margin;
-    // number10.style.color = "#ff0000";
     number10.style.left = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan60)) + "px";
     document.body.appendChild(number10);
     }
@@ -166,11 +153,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root3)) {
     number11.style.top = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan60)) + "px";
     number11.style.left = margin;
-    // number11.style.color = "#0000ff";
     document.body.appendChild(number11);
     } else {
     number11.style.top = margin;
-    // number11.style.color = "#ff0000";
     number11.style.left = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan30)) + "px";
     document.body.appendChild(number11);
     }
@@ -185,17 +170,8 @@ const now = new Date();
   const hour = now.getHours() * 30 + Math.floor(now.getMinutes() / 12) * 6;
   document.body.style.backgroundImage = `conic-gradient(from ${hour}deg, #c4c4c4, #fff)`;
 
-    const line = document.querySelector(".day-indicator")
-    const nowLine = new Date();
-    // const hourLine = nowLine.getHours() * 30 + Math.floor(nowLine.getMinutes() / 12) * 6;
-    const hourLine = ((30 * (nowLine.getHours() % 12 ) + ((30 * nowLine.getMinutes() * 6) / 360 )) + 90) % 360;
-    // line.style.transform = `rotate(${hourLine}deg)translate(-85%,0)`
-      // line.style.transform = `rotate(${hourLine}deg)`
-      const rotatedHour = hourLine + 180;
-      line.style.transform = `rotate(${rotatedHour}deg)`
-      // line.style.transform = `rotate((${hourLine}+180)deg)translate(-30px, -8px)`
-    
-    const hours = now.getHours();
+  const line = document.querySelector(".day-indicator")
+ line.style.transform = `translate(-50%, -50%)`
 
 function formatAMPM(date) {
   var hours = date.getHours();
