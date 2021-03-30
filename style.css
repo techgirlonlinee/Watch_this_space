@@ -106,7 +106,6 @@ video {
 }
 
 body {
-  /* font-size: 16px; */
   font-size: 24px;
   font-family: ArialNarrow, Arial Narrow, Arial, Helvetica, sans-serif;
   line-height: 0;
@@ -128,16 +127,11 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  /* font-size: 224; */
-  /* font-size: 148px; */
   font-size: 24px;
   letter-spacing: 0.5px;
-  /* letter-spacing: -0.5rem; */
   transform: translate(-50%, -50%);
   animation: blink-animation 2s steps(3, start) infinite;
   -webkit-animation: blink-animation 2s steps(3, start) infinite;
-
-  /* animation: blinker 2s linear infinite; */
 }
 
 @keyframes blink-animation {
@@ -150,29 +144,12 @@ body {
     visibility: hidden;
   }
 }
-/* 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-} */
 
 @media (max-width: 490px) {
   body {
-    /* font-size: 19px; */
     font-size: 24px;
   }
   .day-indicator {
-    /* font-size: 112px;
-    letter-spacing: -0.25rem; */
-    /* font-size: 94px; */
-    /* letter-spacing: -0.25rem; */
     font-size: 24px;
   }
 }

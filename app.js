@@ -48,11 +48,9 @@
     if ((((windowHeight/2)-margin2)/ (((windowWidth/2)-margin2)) > root3)) {
     number1.style.top = (((0.5 * windowHeight) - ((0.5 * windowWidth) - margin2) * tan60)) + "px";
     number1.style.right = margin;
-    // number1.style.color = "#0000ff";
     document.body.appendChild(number1);
     } else {
     number1.style.top = margin;
-    // number1.style.color = "#ff0000";
     number1.style.right = ((0.5 * windowWidth) - (((0.5 * windowHeight) - margin2) * tan30)) + "px";
     document.body.appendChild(number1);
     }
@@ -187,13 +185,6 @@ function formatAMPM(date) {
 const line = document.querySelector(".day-indicator")
 line.innerHTML = formatAMPM(new Date)
 line.style.transform = `translate(-50%, -50%)`
-
-
-// if (line.innerHTML = 'AM')
-// { line.style.letterSpacing = "-0.2" + "rem";
-// }
-
-
 
 }
 
