@@ -189,9 +189,9 @@ line.innerHTML = formatAMPM(new Date)
 // line.style.transform = `translate(-50%, -50%)`
 
 
-if (line.innerHTML = 'AM')
-{ line.style.letterSpacing = "-0.2" + "rem";
-}
+// if (line.innerHTML = 'AM')
+// { line.style.letterSpacing = "-0.2" + "rem";
+// }
 
 
 
