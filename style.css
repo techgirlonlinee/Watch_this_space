@@ -130,6 +130,7 @@ body {
   font-size: 24px;
   letter-spacing: 0.5px;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   animation: blink-animation 2s steps(3, start) infinite;
   -webkit-animation: blink-animation 2s steps(3, start) infinite;
 }
