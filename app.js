@@ -184,8 +184,6 @@ function formatAMPM(date) {
 
 const line = document.querySelector(".day-indicator")
 line.innerHTML = formatAMPM(new Date)
-// line.style.transform = `translate(-50%, -50%)`
-
 }
 
 
