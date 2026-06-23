@@ -155,3 +155,34 @@ body {
     font-size: 24px;
   }
 }
+
+
+.about-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  /* center the text box */
+  align-items: center;
+  justify-content: center;
+}
+
+.about-modal.open {
+  display: flex;
+}
+
+.about-inner {
+  max-width: 25vw;
+  background: #fff;
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.about-close {
+  display: block;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
